@@ -21,7 +21,8 @@ if __name__ == "__main__":
     # Load checkpoint
     load_model(model)
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    #device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cpu"
     model = model.to(device)
 
     bs = 8  # any batch size works

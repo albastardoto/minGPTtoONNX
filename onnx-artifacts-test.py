@@ -10,6 +10,7 @@ optimizer = Optimizer("optimizer_model.onnx", module)
 data = SortDataset(split="train")
 x, y = data[0]
 print(x)
+print(y)
 
 module.train()
 training_loss = module(x)
